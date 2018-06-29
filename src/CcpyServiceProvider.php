@@ -64,7 +64,7 @@ class CcpyServiceProvider extends ServiceProvider
      */
     protected function registerManager()
     {
-        $this->app->singleton('hashids', function (Container $app) {
+        $this->app->singleton('ccpy', function (Container $app) {
             $config  = $app['config'];
             $factory = $app['ccpy.factory'];
 
